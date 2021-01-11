@@ -1,0 +1,1 @@
+SECRET_KEY = '$f%)r)3ya5$e#js(%_&pe@p+3vit085^lc)+t19%g)wat0um*('
