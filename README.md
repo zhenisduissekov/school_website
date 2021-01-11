@@ -1,2 +1,6 @@
-# school_website
-task 2 
+# school_web
+task 2
+
+# /admin
+* username: admin
+* pass: admin
