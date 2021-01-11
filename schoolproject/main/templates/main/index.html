@@ -1,0 +1,26 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    index
+{% endblock %}
+
+
+{% block table %}
+    {% if teachers%}
+        <p>Учителя: </p>
+            <thead>
+                <th style="border: 0.2px solid black;">Имя</th>
+                <th style="border: 0.2px solid black;">Фамилия</th>
+                <th style="border: 0.2px solid black;">Предмет</th>
+            </thead>
+        {% for teacher in teachers %}
+            <tr>
+                <td style="border: 0.1px solid black ;"><a href="{% url 'profile' %}">{{ teacher.firstName}}</a></td>
+                <td style="border: 0.1px solid black ;">{{ teacher.lastName}}</td>
+                <td style="border: 0.1px solid black ;">{{ teacher.className}}</td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <p>Нет записей</p>
+    {% endif %}
+{% endblock %}
